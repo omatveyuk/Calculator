@@ -16,10 +16,10 @@ enum Operator:String{
 
 
 class ViewController: UIViewController {
-    var waves = [String]()
-    var op3:Int!
-    var op1 = [Int]()
-    var op2 = [Int]()
+    //var waves = [String]()
+    //var op3:Int!
+    //var op1 = [Int]()
+    //var op2 = [Int]()
     
     
     var val1:Int!
@@ -27,11 +27,12 @@ class ViewController: UIViewController {
     var sign:String!
     
     @IBOutlet weak var Result: UITextField!
-    
+    /*
     func add(value:Int){
         op1.append(value)
     
     }
+    */
     
     @IBAction func Button1(sender: UIButton) {
         Result.text = Result.text + "1"
@@ -72,7 +73,7 @@ class ViewController: UIViewController {
         val1 = 0;
         val2 = 0;
         sign = ""
-        Result.text = "0";
+        Result.text = "";
     }
     
     
