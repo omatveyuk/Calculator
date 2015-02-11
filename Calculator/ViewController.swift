@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     //var op1 = [Int]()
     //var op2 = [Int]()
     
+    @IBOutlet weak var plusButton: UIButton!
     
     var val1:Int!
     var val2:Int!
@@ -50,6 +51,14 @@ class ViewController: UIViewController {
     
     @IBAction func ButtonPlus(sender: UIButton) {
         sign = "+"
+        
+        // this is to test propetrie
+        if(self.plusButton == sender)
+        {
+            println("Equal button is pressed")
+        }
+        
+        
         let x : Int? = Result.text.toInt()
         if (x != nil)
         {
@@ -79,6 +88,8 @@ class ViewController: UIViewController {
     
     @IBAction func ButtonEqual(sender: UIButton) {
         var res:Int!
+        
+        
         
         let x : Int? = Result.text.toInt()
         if (x != nil)
